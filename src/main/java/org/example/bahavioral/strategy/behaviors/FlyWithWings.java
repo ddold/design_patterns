@@ -1,4 +1,4 @@
-package org.example.strategy.behaviors;
+package org.example.bahavioral.strategy.behaviors;
 
 public class FlyWithWings implements FlyBehavior {
 

@@ -1,7 +1,7 @@
-package org.example.strategy.models;
+package org.example.bahavioral.strategy.models;
 
-import org.example.strategy.behaviors.FlyNoWay;
-import org.example.strategy.behaviors.Quack;
+import org.example.bahavioral.strategy.behaviors.FlyNoWay;
+import org.example.bahavioral.strategy.behaviors.Quack;
 
 public class ModelDuck extends Duck {
 
