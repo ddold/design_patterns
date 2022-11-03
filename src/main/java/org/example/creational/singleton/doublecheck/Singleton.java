@@ -1,5 +1,8 @@
 package org.example.creational.singleton.doublecheck;
 
+/*
+https://refactoring.guru/design-patterns/singleton
+ */
 public class Singleton {
 
     private volatile static Singleton instance;
