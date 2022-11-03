@@ -5,6 +5,9 @@ import org.example.creational.factory.store.ChicagoPizzaStore;
 import org.example.creational.factory.store.NYPizzaStore;
 import org.example.creational.factory.store.PizzaStore;
 
+/*
+https://refactoring.guru/design-patterns/factory-method
+ */
 public class PizzaTestDrive {
     public static void main(String[] args) {
         PizzaStore nyStore = new NYPizzaStore();

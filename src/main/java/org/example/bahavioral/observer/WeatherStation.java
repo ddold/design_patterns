@@ -6,6 +6,9 @@ import org.example.bahavioral.observer.observer.HeatIndexDisplay;
 import org.example.bahavioral.observer.observer.StatisticsDisplay;
 import org.example.bahavioral.observer.subject.WeatherData;
 
+/*
+https://refactoring.guru/design-patterns/observer
+ */
 public class WeatherStation {
 
     public static void main(String[] args) {

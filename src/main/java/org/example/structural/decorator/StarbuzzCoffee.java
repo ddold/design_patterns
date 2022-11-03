@@ -8,6 +8,9 @@ import org.example.structural.decorator.decorators.Mocha;
 import org.example.structural.decorator.decorators.Soy;
 import org.example.structural.decorator.decorators.Whip;
 
+/*
+https://refactoring.guru/design-patterns/decorator
+ */
 public class StarbuzzCoffee {
     public static void main(String[] args) {
         Beverage beverage = new Espresso();
