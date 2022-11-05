@@ -6,8 +6,8 @@ import org.example.bahavioral.strategy.behaviors.Quack;
 public class ModelDuck extends Duck {
 
     public ModelDuck() {
-        flyBehavior = new FlyNoWay();
         quackBehavior = new Quack();
+        flyBehavior = new FlyNoWay();
     }
 
     @Override
