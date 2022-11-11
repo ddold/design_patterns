@@ -1,0 +1,40 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+together {
+    interface Subject {
+        registerObserver()
+        removeObserver()
+        notifyObservers()
+    }
+    note left: Here's the subject interface.\nObjects use this interface to\nregister observers and also\nremove themselves from being\nobservers
+
+    class ConcreteSubject {
+        registerObserver()
+        removeObserver()
+        notifyObservers()
+        getState()
+        setState()
+    }
+    note left: A concrete subject always\nimplements the Subject\ninterface. In addition to\nthe register and remove\nmethods, the concrete subject\nimplements a notifyObservers()\nmethod that is used to update\nall the current observers\whenever state changes
+}
+
+together {
+    interface Observer {
+        update()
+    }
+    note right: All potential observers need\nto implement the Observer\ninterface. This interface\njust has one method, update()\nthat gets called when the\nSubjects state changes
+
+    class ConcreteObserver {
+        update()
+    }
+    note right: Concrete observers can be\nany class that implements the\nObserver interface. Each observer\nregisters with a concrete subject\nto receive updates
+}
+
+Subject <|-- ConcreteSubject
+Observer <|-- ConcreteObserver
+Subject "1" --> "many" Observer : observers
+note on link: Each subject\ncan have many\nobservers
+ConcreteObserver --> ConcreteSubject
+
+@enduml
